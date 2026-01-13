@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Surpresa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Preparada para sua surpresa</h1>
+
+    <p class="subtitle">
+        Nosso personagem
+    </p>
+
+    <input type="text" id="nome" placeholder="Digite aqui">
+
+    <button onclick="ligarCircuito()">Conectar</button>
+
+    <div class="circuito">
+        <div class="fio"></div>
+
+        <div class="lampada-container">
+            <div class="lampada" id="lampada"></div>
+            <div class="coracao" id="coracao">❤️</div>
+        </div>
+
+        <div class="fio"></div>
+    </div>
+
+    <p class="mensagem" id="mensagem"></p>
+</div>
+
+<audio id="somLigado">
+    <source src="ligar.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+<!-- TRANSIÇÃO ELÉTRICA -->
+<div class="transicao" id="transicao">
+    <div class="raio"></div>
+    <div class="raio"></div>
+    <div class="raio"></div>
+</div>
+
+
+</body>
+</html>
